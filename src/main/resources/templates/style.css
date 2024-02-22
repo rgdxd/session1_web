@@ -1,0 +1,21 @@
+
+.asd{
+    background-color: white; 
+    width: 200px;
+    height: 40px; 
+    border-radius: 100px;
+}
+.asd:hover{
+    color: white;
+    border: solid white;
+    background-color: black;
+}
+.dsa{
+    border-radius: 10px;
+}
+.fff{
+    border-bottom: solid black;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Добавление пациентов</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1 style="text-align: center">Введите данные пациента</h1>
+        <div style="border-radius: 10px; border:solid black 1px; width: 300px; text-align: center; margin-left: 42%; padding-top: 20px; padding-bottom: 20px">
+            <form >
+                <label>Фото</label><br>
+                <input  style=" border-bottom: solid black;
+                        border-top: 0;
+                        border-left: 0;
+                        border-right: 0; width: 80%; margin-bottom: 15px" type="text" name="photo"><br>
+
+                <label>Фамилия</label><br>
+                <input style=" border-bottom: solid black;
+                       border-top: 0;
+                       border-left: 0;
+                       border-right: 0; width: 80%; margin-bottom: 15px" type="text" name="surname"><br>
+
+                <label>Имя</label><br>
+                <input style=" border-bottom: solid black;
+                       border-top: 0;
+                       border-left: 0;
+                       border-right: 0; width: 80%; margin-bottom: 15px" type="text" name="name"><br>
+
+                <label>Отчество</label><br>
+                <input style=" border-bottom: solid black;
+                       border-top: 0;
+                       border-left: 0;
+                       border-right: 0; width: 80%;margin-bottom: 15px"  type="text" name="patronymic"><br>
+
+                <label>Номер паспорта</label><br>
+                <input style=" border-bottom: solid black;
+                       border-top: 0;
+                       border-left: 0;
+                       border-right: 0; width: 80%;margin-bottom: 15px" type="number" name="passnum"><br>
+
+                <label>Серия паспорта</label><br>
+                <input style=" border-bottom: solid black;
+                       border-top: 0;
+                       border-left: 0;
+                       border-right: 0; width: 80%;margin-bottom: 15px" type="number" name="passser"><br>
+
+                <label>Дата рождения</label><br>
+                <input style=" border-bottom: solid black;
+                       border-top: 0;
+                       border-left: 0;
+                       border-right: 0; width: 80%;margin-bottom: 15px" type="date" name="datebith"><br>
+
+                <label>Пол(муж/жен)</label><br>
+                <input style=" border-bottom: solid black;
+                       border-top: 0;
+                       border-left: 0;
+                       border-right: 0; width: 80%;margin-bottom: 15px" type="text" name="gender"><br>
+
+                <label>адрес</label><br>
+                <input style=" border-bottom: solid black;
+                       border-top: 0;
+                       border-left: 0;
+                       border-right: 0; width: 80%;margin-bottom: 15px" type="text" name="address"><br>
+
+                <label>номер телефона</label><br>
+                <input style=" border-bottom: solid black;
+                       border-top: 0;
+                       border-left: 0;
+                       border-right: 0; width: 80%;margin-bottom: 15px" type="text" name="phonenumber"><br>
+
+                <label>почта</label><br>
+                <input style=" border-bottom: solid black;
+                       border-top: 0;
+                       border-left: 0;
+                       border-right: 0; width: 80%;margin-bottom: 15px" type="text" name="email"><br>
+
+                <label>номер медкарты</label><br>
+                <input style=" border-bottom: solid black;
+                       border-top: 0;
+                       border-left: 0;
+                       border-right: 0; width: 80%;margin-bottom: 15px" type="number" name="medcardnum"><br>
+
+                <label>дата регистрации</label><br>
+                <input style=" border-bottom: solid black;
+                       border-top: 0;
+                       border-left: 0;
+                       border-right: 0; width: 80%;margin-bottom: 15px" type="date" name="date_of_issue"><br>
+
+                <label>дата последнего посещения</label><br>
+                <input style=" border-bottom: solid black;
+                       border-top: 0;
+                       border-left: 0;
+                       border-right: 0; width: 80%;margin-bottom: 15px" type="date" name="date_of_last"><br>
+
+                <label>дата следующего посещения</label><br>
+                <input style=" border-bottom: solid black;
+                       border-top: 0;
+                       border-left: 0;
+                       border-right: 0; width: 80%;margin-bottom: 15px" type="date" name="date_of_next"><br>
+
+
+                <label>анамнезис</label><br>
+                <input style=" border-bottom: solid black;
+                       border-top: 0;
+                       border-left: 0;
+                       border-right: 0; width: 80%;margin-bottom: 15px" type="text" name="anamnesis"><br>
+
+                <label>рекомендации</label><br>
+                <input style=" border-bottom: solid black;
+                       border-top: 0;
+                       border-left: 0;
+                       border-right: 0; width: 80%;margin-bottom: 15px" type="text" name="recommendations"><br>
+
+                <label>номер полиса</label><br>
+                <input style=" border-bottom: solid black;
+                       border-top: 0;
+                       border-left: 0;
+                       border-right: 0; width: 80%;margin-bottom: 15px" type="number" name="policynum"><br>
+
+                <label>конец полиса</label><br>
+                <input style=" border-bottom: solid black;
+                       border-top: 0;
+                       border-left: 0;
+                       border-right: 0; width: 80%;margin-bottom: 15px" type="date" name="end_date"><br>
+
+                <button style="background-color: white;
+                        width: 200px;
+                        height: 40px;
+                        border-radius: 100px;"  id="addUser" formaction="/companyregistration/add" formmethod="post" type="sumbit">Зарегистрироваться </button>
+            </form>
+        </div>
+    </body>
+</html>
